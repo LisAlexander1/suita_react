@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
-import Pup from "./svg/pup.jsx";
+import Pup from "../svg/pup.jsx";
+import Links from "../links.jsx";
+import Line from "../svg/line.jsx";
 
-const Block = styled.div`
+const Block = styled.section`
   position: relative;
   width: 100%;
   display: flex;
@@ -14,12 +16,18 @@ const Block = styled.div`
 const TextWrapper = styled.div`
   flex: 1 1 50%;
   margin-right: 60px;
-  height: min-content;
   align-self: center;
+  gap: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 const LinksWrapper = styled.div`
-  align-self: flex-end;
+    display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 15px;
 `
 
 const HomeImage = styled.img`
@@ -38,8 +46,26 @@ const PupOffset = styled(Pup)`
 `
 
 const Header = styled.h1`
-  font-size: 3.18rem;
-  align-self: center;
+  font-size: 75px;
+  line-height: 88px;
+  font-weight: 400;
+  letter-spacing: 3.2px;
+`
+
+const LevelBold = styled.span`
+  font-weight: 700;
+`
+
+const EmphasizedNext = styled.span`
+  position: relative;
+`
+
+const NextLine = styled(Line)`
+  fill: ${props => props.theme.accent};
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 `
 function Home(props) {
     return (
@@ -47,13 +73,18 @@ function Home(props) {
             <HomeImage src="/png/IMAGE.png"/>
             <PupOffset/>
             <TextWrapper>
+                <div/>
                 <Header>
-                    Take your podcast to the
-                    <span> next</span>
-                    <span> level</span>.
+                    Take your <br/> podcast to the <br/>
+                    <EmphasizedNext>
+                        next
+                        <NextLine/>
+                    </EmphasizedNext>
+                    <LevelBold> level</LevelBold>.
                 </Header>
                 <LinksWrapper>
                     <span>Listen on</span>
+                    <Links/>
                 </LinksWrapper>
             </TextWrapper>
         </Block>

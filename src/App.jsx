@@ -3,7 +3,7 @@ import styled, {ThemeProvider} from "styled-components";
 import {theme} from "./theme.js";
 import LayoutWrapper from "./componets/layout-wrapper.jsx";
 import Header from "./componets/header.jsx";
-import Home from "./componets/home.jsx";
+import Home from "./componets/sections/home.jsx";
 
 const Main = styled.main`
   background-color: ${props => props.theme.bg_secondary};

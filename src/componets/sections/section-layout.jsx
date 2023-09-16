@@ -1,6 +1,6 @@
 import React from 'react';
 
-function BlockWrapper(props) {
+function SectionLayout(props) {
     return (
         <div>
             {props.children}
@@ -8,4 +8,4 @@ function BlockWrapper(props) {
     );
 }
 
-export default BlockWrapper;
+export default SectionLayout;

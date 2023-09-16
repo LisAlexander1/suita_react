@@ -18,17 +18,26 @@ const Wrapper = styled.header`
   z-index: 1000;
 `
 
-const Links = styled.div`
+const Links = styled.ul`
+  list-style: none;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   gap: 40px;
+  height: 100%;
+  
+  ul {
+    height: 100%;
+  }
   
   a {
     color: ${props => props.theme.fg_primary};
     transition: color 200ms;
     font-size: 17px;
     text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
     
     &:hover {
       color: ${props => props.theme.accent};
@@ -41,10 +50,10 @@ function Header(props) {
         <Wrapper>
             <img src={icon_image}/>
             <Links>
-                <a href="#home">Home</a>
-                <a href="#episodes">Episodes</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <ul><a href="#home">Home</a></ul>
+                <ul><a href="#episodes">Episodes</a></ul>
+                <ul><a href="#about">About</a></ul>
+                <ul><a href="#contact">Contact</a></ul>
             </Links>
         </Wrapper>
     );
