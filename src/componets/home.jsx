@@ -14,10 +14,12 @@ const Block = styled.div`
 const TextWrapper = styled.div`
   flex: 1 1 50%;
   margin-right: 60px;
+  height: min-content;
+  align-self: center;
 `
 
 const LinksWrapper = styled.div`
-
+  align-self: flex-end;
 `
 
 const HomeImage = styled.img`
@@ -37,6 +39,7 @@ const PupOffset = styled(Pup)`
 
 const Header = styled.h1`
   font-size: 3.18rem;
+  align-self: center;
 `
 function Home(props) {
     return (
