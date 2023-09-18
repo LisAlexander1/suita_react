@@ -50,10 +50,10 @@ function Header(props) {
         <Wrapper>
             <img src={icon_image}/>
             <Links>
-                <ul><a href="#home">Home</a></ul>
-                <ul><a href="#episodes">Episodes</a></ul>
-                <ul><a href="#about">About</a></ul>
-                <ul><a href="#contact">Contact</a></ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#episodes">Episodes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </Links>
         </Wrapper>
     );
