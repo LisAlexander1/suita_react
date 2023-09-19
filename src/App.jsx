@@ -97,13 +97,13 @@ const Main = styled.div`
   }
 `
 
-const Wrapper = styled.main`
+const Wrapper = styled.div`
   max-width: 1400px;
   padding: 40px 50px 100px 50px;
   flex: 1;
 `
 
-const ContentLayout = styled.div`
+const ContentLayout = styled.main`
   width: 100%;
 `
 
