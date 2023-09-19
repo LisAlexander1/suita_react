@@ -1,20 +1,19 @@
 import React from 'react';
 import styled from "styled-components";
-import Pup from "../svg/pup.jsx";
+import SvgLinesTop from "../svg/svg-lines-top.jsx";
 import Links from "../links.jsx";
 import Line from "../svg/line.jsx";
 
-const Block = styled.section`
+const Section = styled.section`
   position: relative;
   width: 100%;
   display: flex;
   gap: 60px;
-  margin: 60px 70px;
   height: 873px;
 `
 
 const TextWrapper = styled.div`
-  flex: 1 1 50%;
+  flex: 1 0 50%;
   margin-right: 60px;
   align-self: center;
   gap: 90px;
@@ -24,21 +23,22 @@ const TextWrapper = styled.div`
 `
 
 const LinksWrapper = styled.div`
-    display: flex;
+  display: flex;
   flex-direction: column;
   gap: 16px;
   font-size: 15px;
 `
 
 const HomeImage = styled.img`
-  display: block;
-  flex: 1 1 50%;
-  height: 100%;
+  flex: 1 1 auto;
   object-fit: cover;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
   border-radius: 12px;
 `
 
-const PupOffset = styled(Pup)`
+const PupOffset = styled(SvgLinesTop)`
   position: absolute;
   fill: ${props => props.theme.accent};
   top: -26px;
@@ -60,7 +60,7 @@ const EmphasizedNext = styled.span`
   position: relative;
 `
 
-const NextLine = styled(Line)`
+const NextLine = styled.svg`
   fill: ${props => props.theme.accent};
   position: absolute;
   width: 100%;
@@ -69,7 +69,7 @@ const NextLine = styled(Line)`
 `
 function Home(props) {
     return (
-        <Block>
+        <Section id="home">
             <HomeImage src="/png/IMAGE.png"/>
             <PupOffset/>
             <TextWrapper>
@@ -87,7 +87,7 @@ function Home(props) {
                     <Links/>
                 </LinksWrapper>
             </TextWrapper>
-        </Block>
+        </Section>
     );
 }
 

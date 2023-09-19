@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-
-import icon_image from "/IMAGE (11).svg";
+import Logo from "../svg/logo.jsx";
 
 const Wrapper = styled.header`
   width: 100%;
@@ -44,11 +43,14 @@ const Links = styled.ul`
     }
   }
 `
+const StyledLogo = styled(Logo)`
+  fill: ${props => props.theme.fg_primary}
+`
 
-function Header(props) {
+function Header() {
     return (
         <Wrapper>
-            <img src={icon_image}/>
+            <StyledLogo/>
             <Links>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#episodes">Episodes</a></li>

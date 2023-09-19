@@ -5,5 +5,4 @@ export const theme = {
     bg_secondary: "#191919",
     accent: "#118DA8",
     rating: "#FCFF51",
-    step: 6
 }
