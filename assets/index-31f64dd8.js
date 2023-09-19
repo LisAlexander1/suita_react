@@ -429,7 +429,7 @@ Error generating stack: `+i.message+`
     color: ${e=>e.theme.fg_secondary};
     font-weight: 400;
   }
-`,im=L.main`
+`,im=L.div`
   background-color: ${e=>e.theme.bg_secondary};
   display: flex;
   flex-direction: column;
@@ -441,7 +441,7 @@ Error generating stack: `+i.message+`
   justify-content: flex-start;
   color: ${e=>e.theme.fg_primary};
   }
-`,lm=L.div`
+`,lm=L.main`
   max-width: 1400px;
   padding: 40px 50px 100px 50px;
   flex: 1;
