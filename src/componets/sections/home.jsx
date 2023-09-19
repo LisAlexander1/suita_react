@@ -3,6 +3,7 @@ import styled from "styled-components";
 import SvgLinesTop from "../svg/svg-lines-top.jsx";
 import Links from "../links.jsx";
 import Line from "../svg/line.jsx";
+import Photo from "/png/IMAGE.png"
 
 const Section = styled.section`
   position: relative;
@@ -60,7 +61,7 @@ const EmphasizedNext = styled.span`
   position: relative;
 `
 
-const NextLine = styled.svg`
+const NextLine = styled(Line)`
   fill: ${props => props.theme.accent};
   position: absolute;
   width: 100%;
@@ -70,7 +71,7 @@ const NextLine = styled.svg`
 function Home(props) {
     return (
         <Section id="home">
-            <HomeImage src="/png/IMAGE.png"/>
+            <HomeImage src={Photo}/>
             <PupOffset/>
             <TextWrapper>
                 <div/>
