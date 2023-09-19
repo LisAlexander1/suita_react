@@ -1,6 +1,6 @@
 import Photo1 from "/png/IMAGE-1.png"
 import Photo2 from "/png/IMAGE-2.png"
-import Photo3 from "/png/IMAGE-3.png"
+import Photo3 from "/png/Frame.png"
 
 export const episodes = [
     {

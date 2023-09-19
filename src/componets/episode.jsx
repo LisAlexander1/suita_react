@@ -18,7 +18,8 @@ const TagsMargin = styled(Tags)`
 `
 
 const Image = styled.img`
-  
+  height: 432px;
+  width: auto;
 `
 
 const TextWrapper = styled.div`
