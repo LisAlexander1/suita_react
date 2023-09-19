@@ -83,7 +83,7 @@ const TextStyle = createGlobalStyle`
   }
 `
 
-const Main = styled.main`
+const Main = styled.div`
   background-color: ${props => props.theme.bg_secondary};
   display: flex;
   flex-direction: column;
@@ -97,7 +97,7 @@ const Main = styled.main`
   }
 `
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
   max-width: 1400px;
   padding: 40px 50px 100px 50px;
   flex: 1;
