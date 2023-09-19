@@ -441,10 +441,10 @@ Error generating stack: `+i.message+`
   justify-content: flex-start;
   color: ${e=>e.theme.fg_primary};
   }
-`,lm=L.main`
+`,lm=L.div`
   max-width: 1400px;
   padding: 40px 50px 100px 50px;
   flex: 1;
-`,um=L.div`
+`,um=L.main`
   width: 100%;
 `;function sm(){return D($0,{theme:R0,children:[D(im,{children:[g(D0,{}),D(lm,{children:[D(um,{children:[g(th,{}),g(kh,{}),g(Rh,{}),g(Ah,{}),g(Zh,{})]}),g(nm,{})]})]}),g(rm,{}),g(om,{})]})}Zi.createRoot(document.getElementById("root")).render(g(Oe.StrictMode,{children:g(sm,{})}));
